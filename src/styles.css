@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: -30px auto;
+}
+.navbar.custom-nav {
+  background-color: rgb(251, 222, 92) !important;
+
+}
+
+header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.hero-section {
+  border: none !important;
+  border-bottom: 0 !important;
+}
+
+.btn.custom-btn {
+  background-color: rgb(251, 222, 92);
+}
+
+footer {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/*Account*/
+.sidebar {
+  height: 100vh;
+  background-color: rgb(248, 249, 250);
+  color: white;
+  padding-top: 20px;
+}
+.sidebar a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+.sidebar a:hover {
+  background-color: #495057;
+}
+
+.text-center {
+  color: #000;
+}
+.content {
+  padding: 20px;
+}
