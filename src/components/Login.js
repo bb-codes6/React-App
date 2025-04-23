@@ -1,16 +1,39 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ onLogin }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Logging in with:", { email, password });
+    const handleSubmit = async (e) => {
+        try {
+            e.preventDefault();
+            const response = await fetch("http://localhost:8080/login", {
+                method: "POST",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({email, password}),
+            });
+            const status = response.status;
+            const responseJson = await response.json();
+            console.log('responseJson', responseJson);
+            if (status === 200) {
+                navigate("/");
+            }
+            else {
+                alert('Invalid login credentials');
+            }
 
-        // Simulate a login and call the login handler
-        if (email && password) {
-            onLogin();
+            // Simulate a login and call the login handler
+            if (email && password) {
+                onLogin();
+            }
+        }
+        catch (e) {
+            alert(`Error: ${e.message}`);
         }
     };
 
@@ -41,7 +64,9 @@ const Login = ({ onLogin }) => {
                     />
                 </div>
                 <div className="d-flex justify-content-between">
-                    <button type="submit" className="btn btn-light custom-btn">Login</button>
+                    <button type="submit" className="btn btn-light custom-btn">
+                        Login
+                    </button>
                     <button type="reset" className="btn btn-secondary">Reset</button>
                 </div>
             </form>

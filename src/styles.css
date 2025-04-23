@@ -44,8 +44,17 @@ footer {
   display: block;
   padding: 10px 20px;
 }
+.active-link {
+  background-color: rgb(251, 222, 92) !important;
+  color: #000 !important;
+  border: rgb(251, 222, 92) !important;
+}
 .sidebar a:hover {
   background-color: #495057;
+}
+.card-header {
+  background-color: rgb(251, 222, 92) !important;
+  border: rgb(251, 222, 92) !important;
 }
 
 .text-center {

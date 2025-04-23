@@ -8,14 +8,14 @@ const Dashboard = () => {
                 <div className="col-md-3">
                     {/* Sidebar */}
                     <div className="list-group">
-                        <Link to="/account" className="list-group-item list-group-item-action active">
+                        <Link to="/account" className="list-group-item list-group-item-action active active-link">
                             Dashboard
                         </Link>
                         <Link to="/account/profile" className="list-group-item list-group-item-action">
                             Profile
                         </Link>
                         <Link to="/account/settings" className="list-group-item list-group-item-action">
-                            Settings
+                            Update Account
                         </Link>
                         <Link to="/logout" className="list-group-item list-group-item-action text-danger">
                             Logout

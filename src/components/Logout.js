@@ -10,9 +10,9 @@ function Logout({ onLogout }) {
     };
 
     return (
-        <div>
+        <div className="d-flex gap-3 p-5">
             <h2>Are you sure you want to log out?</h2>
-            <button onClick={handleLogoutClick}>Confirm Logout</button>
+            <button type="submit" className="btn btn-light custom-btn" onClick={handleLogoutClick}>Confirm Logout</button>
         </div>
     );
 }

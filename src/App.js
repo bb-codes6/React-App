@@ -16,17 +16,23 @@ function App() {
         console.log("User logged in");
     };
 
+    const handleRegister = () => {
+        setIsLoggedIn(true);
+        console.log("User Registered");
+    };
+
     const handleLogout = () => {
         setIsLoggedIn(false);
         console.log("User logged out");
     };
 
+
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Layout isLoggedIn={isLoggedIn} handleLogout={handleLogout} />}>
+                <Route path="/" element={<Layout isLoggedIn={isLoggedIn} handleLogout={handleLogout} isRegister={isLoggedIn} />}>
                     <Route index element={<Home />} />
-                    <Route path="registration" element={<Registration />} />
+                    <Route path="registration" element={<Registration onRegister={handleRegister} />} />
                     <Route path="registration.html" element={<Navigate to="/registration" />} />
                     <Route path="account" element={<Account />} />
                     <Route path="account.html" element={<Navigate to="/account" />} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
-const Layout = ({ isLoggedIn, handleLogout }) => {
+const Layout = ({ isLoggedIn, handleLogout,  }) => {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary custom-nav">
@@ -33,7 +33,7 @@ const Layout = ({ isLoggedIn, handleLogout }) => {
                                         <Link to="/account" className="nav-link">Account</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/logout" className="nav-link" onClick={handleLogout}>Logout</Link>
+                                        <Link to="/logout" className="nav-link" >Logout</Link>
                                     </li>
                                 </>
                             ) : (
@@ -51,8 +51,10 @@ const Layout = ({ isLoggedIn, handleLogout }) => {
                 </div>
             </nav>
 
-            {/* Render the child components here */}
-            <Outlet />
+            <div>
+                {/* Render the child components here */}
+                <Outlet />
+            </div>
 
             {/* Footer, always displayed */}
             <footer className="bg-light text-dark text-center py-4 mt-5">
