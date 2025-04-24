@@ -14,7 +14,7 @@ const Dashboard = () => {
                         <Link to="/account/profile" className="list-group-item list-group-item-action">
                             Profile
                         </Link>
-                        <Link to="/account/settings" className="list-group-item list-group-item-action">
+                        <Link to="/UpdateAccount" className="list-group-item list-group-item-action">
                             Update Account
                         </Link>
                         <Link to="/logout" className="list-group-item list-group-item-action text-danger">

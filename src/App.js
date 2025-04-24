@@ -4,9 +4,11 @@ import './styles.css';
 import Home from "./components/Home";
 import Registration from "./components/Registration";
 import Account from "./components/Account";
+import UpdateAccount from "./components/UpdateAccount";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
 import Layout from "./components/Layout";
+
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -19,6 +21,11 @@ function App() {
     const handleRegister = () => {
         setIsLoggedIn(true);
         console.log("User Registered");
+    };
+
+    const handleUpdate = () => {
+        setIsLoggedIn(true);
+        console.log("User updated account!");
     };
 
     const handleLogout = () => {
@@ -36,6 +43,8 @@ function App() {
                     <Route path="registration.html" element={<Navigate to="/registration" />} />
                     <Route path="account" element={<Account />} />
                     <Route path="account.html" element={<Navigate to="/account" />} />
+                    <Route path="updateAccount" element={<UpdateAccount onUpdate={handleUpdate} />} />
+                    <Route path="updateacount.html" element={<Navigate to="/updateaccount" />} />
                     <Route path="login" element={<Login onLogin={handleLogin} />} />
                     <Route path="login.html" element={<Navigate to="/login" />} />
                     <Route path="logout" element={<Logout onLogout={handleLogout} />} />
