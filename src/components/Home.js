@@ -37,7 +37,7 @@ const Home = () => {
                 </div>
                 <div className="overflow-hidden" style={{maxHeight: "30vh"}}>
                     <div className="container px-5">
-                        <img src={`${process.env.PUBLIC_URL}/georgie-cobbs-muOHbrFGEQY-unsplash.jpg`} alt="Hero-image" className="img-fluid border rounded-3 shadow-lg mb-4" width={"700"} height={"500"} loading="lazy"/>
+                        <img src= "React-App/georgie-cobbs-muOHbrFGEQY-unsplash.jpg" alt="Hero-image" className="img-fluid border rounded-3 shadow-lg mb-4" width={"700"} height={"500"} loading="lazy"/>
                     </div>
                 </div>
             </div>
