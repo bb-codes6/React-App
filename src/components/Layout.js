@@ -7,7 +7,7 @@ const Layout = ({ isLoggedIn, handleLogout,  }) => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary custom-nav">
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand">
-                        <img src="/rare..png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" />
+                        <img src="/rare.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" />
                     </Link>
                     <button
                         className="navbar-toggler"
