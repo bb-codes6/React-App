@@ -7,7 +7,7 @@ const Layout = ({ isLoggedIn, handleLogout,  }) => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary custom-nav">
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand">
-                        <img src="/rare.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" />
+                        <img src="React-App/rare.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" />
                     </Link>
                     <button
                         className="navbar-toggler"
@@ -58,7 +58,7 @@ const Layout = ({ isLoggedIn, handleLogout,  }) => {
 
             {/* Footer, always displayed */}
             <footer className="bg-light text-dark text-center py-4 mt-5">
-                <img src="/rare.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" />
+                <img src="React-App/rare.png" alt="Logo" width="100" height="100" className="d-inline-block align-text-top" />
                 <div className="container">
                     <p className="mb-2">© 2024 <strong>Rare Tech</strong>. All Rights Reserved.</p>
                     <p className="mb-2">Empowering the next generation of tech leaders.</p>
