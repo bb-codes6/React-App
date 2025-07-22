@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bb-codes6/React-App.git/static/css/main.934d9feb.css",
+    "main.js": "/bb-codes6/React-App.git/static/js/main.a0d34654.js",
+    "static/js/453.3c3c57d0.chunk.js": "/bb-codes6/React-App.git/static/js/453.3c3c57d0.chunk.js",
+    "index.html": "/bb-codes6/React-App.git/index.html",
+    "main.934d9feb.css.map": "/bb-codes6/React-App.git/static/css/main.934d9feb.css.map",
+    "main.a0d34654.js.map": "/bb-codes6/React-App.git/static/js/main.a0d34654.js.map",
+    "453.3c3c57d0.chunk.js.map": "/bb-codes6/React-App.git/static/js/453.3c3c57d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.934d9feb.css",
+    "static/js/main.a0d34654.js"
+  ]
+}
